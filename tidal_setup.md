@@ -65,7 +65,7 @@ If you are new to TidalCycles I recommend to go through the [tutorial called "wo
 
 Q: What are prerequisites for this installation?
 
-A: a fairly up-to date Macbook (Pro). Fairly up-to date means you should have a recent macOS on your machine - some of the components above will not work on very old hardware or operating system. Maybe you can find older versions of them but this is beyond the scope of this guide. You should know how to use the Terminal on your Mac, and how to unzip and move files. Plan for roughly 2 hours, sometime the installation will need your attention while other steps take time while you can do other things. 
+A: A fairly up-to date Macbook (Pro). Fairly up-to date means you should have a recent macOS on your machine - some of the components above will not work on very old hardware or operating system. Maybe you can find older versions of them but this is beyond the scope of this guide. You should know how to use the Terminal on your Mac, and how to unzip and move files. Plan for roughly 2 hours, sometime the installation will need your attention while other steps take time while you can do other things. 
 
 Q: What is the difference between this and the [official installation guide](https://tidalcycles.org/docs/getting-started/macos_install)?
 
