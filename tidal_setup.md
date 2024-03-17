@@ -59,7 +59,7 @@ If you hear drums ... done. Congratulations. If not, check your audio setup care
 
 Enter `hush` on a new line and do control + Return to silence the drummer.
 
-If you are new to TidalCycles I rcommend to go through the [tutorial called "workshop"](https://tidalcycles.org/docs/patternlib/tutorials/workshop) on the TidalCycles website. Then keep practicing - there are lots of videos, tutorials and reference material to learn from.
+If you are new to TidalCycles I recommend to go through the [tutorial called "workshop"](https://tidalcycles.org/docs/patternlib/tutorials/workshop) on the TidalCycles website. Then keep practicing - there are lots of videos, tutorials and reference material to learn from.
 
 ## FAQ
 
