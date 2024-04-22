@@ -116,7 +116,7 @@ https://estuary.mcmaster.ca/
 
 browser-based tool collaboration and communication in networked ensembles. integrates several livecoding tools: TidalCycles, Punctual, CineCer0, TimeNot, Seis8s, Hydra
 
-\- ui can become a bit overwhelming    
+\- the user interface can become a bit overwhelming    
 
 ## Tipps where to start
 
