@@ -69,7 +69,7 @@ A: A fairly up-to date Macbook (Pro). Fairly up-to date means you should have a 
 
 Q: What is the difference between this and the [official installation guide](https://tidalcycles.org/docs/getting-started/macos_install)?
 
-A: Method: For installations like these my preferred method is installing the components by following the instructions on the individual websites. The alternative would be to provide detailed instructions which will go out of date quickly.
+A: Method: My preferred method is to suggest installing components by following the instructions on their individual websites. The alternative would be to provide detailed step-by-step instructions which get  outdated quickly.
 
 Manual installation steps: The official installation guide features an additional [install script](https://github.com/tidalcycles/tidal-bootstrap), which in theory is a good idea because you could run the script and it would do all the above steps for you. In practice the script comes whith [its own issues](https://github.com/tidalcycles/tidal-bootstrap/issues) and the components it installs are currently not up-to date. If you not already an expert, it is harder to understand what to do when a long-running script throws an error message than when one of the individual steps described above would fail.  
 
