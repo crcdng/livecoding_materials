@@ -44,7 +44,7 @@ https://marketplace.visualstudio.com/items?itemName=tidalcycles.vscode-tidalcycl
 ### Testing the Setup
 
 1. Start Supercollider. The bottom bar will change color a bit going green then yellow then green again.
-2. In VSCOde create a new file and save it as "hello.tidal"
+2. In VSCode, create a new file and save it as "hello.tidal"
 
 Enter this line into the file 
 
