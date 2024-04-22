@@ -1,4 +1,4 @@
-# Keys to Evalaute code 
+# Keys to Evaluate code 
 
 Different Live Coding tools use different keys for evaluating code. Shown here for Mac.
 
