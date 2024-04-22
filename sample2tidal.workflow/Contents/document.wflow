@@ -1,342 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>AMApplicationBuild</key>
-	<string>521.1</string>
-	<key>AMApplicationVersion</key>
-	<string>2.10</string>
-	<key>AMDocumentVersion</key>
-	<string>2</string>
-	<key>actions</key>
-	<array>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.1.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>fileNames</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.path</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
-				<key>ActionName</key>
-				<string>Get Specified Finder Items</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>fileNames</key>
-					<array>
-						<string>~/root/sound/_samples/Dirt-Samples-master/bd/BT0A0DA.wav</string>
-					</array>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.SpecifiedFiles</string>
-				<key>CFBundleVersion</key>
-				<string>1.1.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryFilesAndFolders</string>
-				</array>
-				<key>Class Name</key>
-				<string>SpecifiedFilesAction</string>
-				<key>Disabled</key>
-				<true/>
-				<key>InputUUID</key>
-				<string>0A4F3E88-C18B-419B-846E-EF11FFA54A25</string>
-				<key>Keywords</key>
-				<array>
-					<string>File</string>
-					<string>Choose</string>
-					<string>Find</string>
-					<string>Get</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>4D528DBD-F84D-4EBF-A61F-D158B4C9BABF</string>
-				<key>UUID</key>
-				<string>EC00859D-DA85-4189-A561-D6670967A113</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Finder</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<array/>
-						<key>name</key>
-						<string>fileNames</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>isViewVisible</key>
-				<integer>0</integer>
-				<key>location</key>
-				<string>521.500000:164.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.0.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>source</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
-				<key>ActionName</key>
-				<string>Run AppleScript</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>source</key>
-					<string>on run {input, parameters}	-- dissect parts of the path	set myfullpath to (the POSIX path of input)	set mypathparts to splitText(myfullpath, "/")	set myfilename to mypathparts's (item -1)	set myfolder to mypathparts's (item -2)	set mypathlist to mypathparts's (items 2 thru -2)	set mypath to convertListToString(mypathlist, "/")	-- set myfiles to list folder mypath whose name extension is not "asd"		tell application "System Events"		set myfiles to name of every file in folder mypath whose name extension is not "asd"	end tell		set mysortedfiles to simple_sort(the myfiles)	set myposition to getPositionOfItemInList(myfilename, mysortedfiles)	set result to myfolder &amp; ":" &amp; myposition - 1	return resultend runon splitText(theText, theDelimiter)	set AppleScript's text item delimiters to theDelimiter	set theTextItems to every text item of theText	set AppleScript's text item delimiters to ""	return theTextItemsend splitTexton convertListToString(theList, theDelimiter)	set AppleScript's text item delimiters to theDelimiter	set theString to theList as string	set AppleScript's text item delimiters to ""	return theStringend convertListToStringon getPositionOfItemInList(theItem, theList)	repeat with a from 1 to count of theList		if item a of theList is theItem then return a	end repeat	return 0end getPositionOfItemInListon simple_sort(my_list)	set the index_list to {}	set the sorted_list to {}	repeat (the number of items in my_list) times		set the low_item to ""		repeat with i from 1 to (number of items in my_list)			if i is not in the index_list then				set this_item to item i of my_list as text				if the low_item is "" then					set the low_item to this_item					set the low_item_index to i				else if this_item comes before the low_item then					set the low_item to this_item					set the low_item_index to i				end if			end if		end repeat		set the end of sorted_list to the low_item		set the end of the index_list to the low_item_index	end repeat	return the sorted_listend simple_sort</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
-				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>RunScriptAction</string>
-				<key>InputUUID</key>
-				<string>00F0AC8C-2778-4039-92E2-02E098F07AC7</string>
-				<key>Keywords</key>
-				<array>
-					<string>Run</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>B89E8001-EC59-4C91-8E13-9B71073880A4</string>
-				<key>UUID</key>
-				<string>35C607E6-1FBD-470D-AD75-7918519C4076</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
-						<key>name</key>
-						<string>source</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>isViewVisible</key>
-				<integer>1</integer>
-				<key>location</key>
-				<string>521.500000:589.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<false/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.attributed-string</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.2.1</string>
-				<key>AMApplication</key>
-				<array>
-					<string>System</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict/>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<false/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.attributed-string</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Copy to Clipboard.action</string>
-				<key>ActionName</key>
-				<string>Copy to Clipboard</string>
-				<key>ActionParameters</key>
-				<dict/>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.CopyToClipboard</string>
-				<key>CFBundleVersion</key>
-				<string>1.2.1</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
-				<key>CanShowWhenRun</key>
-				<false/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>AMCopyToClipboardAction</string>
-				<key>InputUUID</key>
-				<string>05F61E3D-F417-4853-BB38-66B9D10683E6</string>
-				<key>Keywords</key>
-				<array>
-					<string>Copy</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>7CB9A02A-3AFB-404C-9EF4-82A390E4098D</string>
-				<key>UUID</key>
-				<string>FE226EDC-15F8-4B64-B166-24602E2F5091</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>System</string>
-				</array>
-				<key>arguments</key>
-				<dict/>
-				<key>isViewVisible</key>
-				<integer>1</integer>
-				<key>location</key>
-				<string>529.000000:670.000000</string>
-			</dict>
-			<key>isViewVisible</key>
-			<integer>1</integer>
-		</dict>
-	</array>
-	<key>connectors</key>
-	<dict>
-		<key>08741803-C225-4B20-A8AB-AC9B235B9C08</key>
-		<dict>
-			<key>from</key>
-			<string>35C607E6-1FBD-470D-AD75-7918519C4076 - 35C607E6-1FBD-470D-AD75-7918519C4076</string>
-			<key>to</key>
-			<string>FE226EDC-15F8-4B64-B166-24602E2F5091 - FE226EDC-15F8-4B64-B166-24602E2F5091</string>
-		</dict>
-		<key>DF3C1487-0ACF-4FE4-B4A3-811EE090B91E</key>
-		<dict>
-			<key>from</key>
-			<string>EC00859D-DA85-4189-A561-D6670967A113 - EC00859D-DA85-4189-A561-D6670967A113</string>
-			<key>to</key>
-			<string>35C607E6-1FBD-470D-AD75-7918519C4076 - 35C607E6-1FBD-470D-AD75-7918519C4076</string>
-		</dict>
-	</dict>
-	<key>workflowMetaData</key>
-	<dict>
-		<key>applicationBundleIDsByPath</key>
-		<dict/>
-		<key>applicationPaths</key>
-		<array/>
-		<key>inputTypeIdentifier</key>
-		<string>com.apple.Automator.fileSystemObject</string>
-		<key>outputTypeIdentifier</key>
-		<string>com.apple.Automator.nothing</string>
-		<key>presentationMode</key>
-		<integer>15</integer>
-		<key>processesInput</key>
-		<integer>0</integer>
-		<key>serviceInputTypeIdentifier</key>
-		<string>com.apple.Automator.fileSystemObject</string>
-		<key>serviceOutputTypeIdentifier</key>
-		<string>com.apple.Automator.nothing</string>
-		<key>serviceProcessesInput</key>
-		<integer>0</integer>
-		<key>systemImageName</key>
-		<string>NSTouchBarCompose</string>
-		<key>useAutomaticInputType</key>
-		<integer>0</integer>
-		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.servicesMenu</string>
-	</dict>
-</dict>
-</plist>
