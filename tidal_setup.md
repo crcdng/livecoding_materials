@@ -149,7 +149,7 @@ Then enter
 
 and press Shift and Return again. There should be sound coming out. If not, then there are problems with the audio setup on your machine.  
 
-In the Windows File Explorer, select the "View" tab and activate "Hidden Items". Then you can navigate to the  `Platform.userExtensionDir` folder above.
+In the Windows File Explorer, select the "View" tab and activate "Hidden Items". Then you can navigate to the  `Platform.userExtensionDir` folder mentioned above.
 
 Close Supercollider before proceeding, then start Supercollider again. 
 
@@ -196,11 +196,11 @@ When this is done, close Supercollider.
 
 Open a Powershell window and install ghcup following the instructions:
 https://www.haskell.org/ghcup/     
-This will ask you to confirm some steps and the installation will take a while. It will open a second Window named "MinGW x64", make sure the installation has finished in that window as well. This one can take a long time. 
+This will ask you to confirm some steps and the installation will take a while. It will open a second Window named "MinGW x64", make sure the installation has finished in that window as well. This one can take a long time. If that stays on the line "Downloading the latest package list from hackage.haskell.org" for say 20 minutes, close both windows and go to the next step.
 
 ### 3. TidalCycles
 
-After the previous step has finished, close both the Powershell window and the MinGW and open a new Powershell window "Run as Administrator".
+After the previous step has finished, close both the Powershell window and the MinGW and open a new Powershell window yhis time with the option "Run as Administrator".
 
 Then run the following commands 
 
@@ -209,6 +209,8 @@ Then run the following commands
 then 
 
 `cabal v1-install tidal`
+
+Again, both will take some time but should eventually finish.
 
 ### 4. VSCode
 
