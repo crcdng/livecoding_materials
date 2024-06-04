@@ -220,6 +220,13 @@ https://code.visualstudio.com/
 Finally, install the TidalCycles VSCode Extension
 https://marketplace.visualstudio.com/items?itemName=tidalcycles.vscode-tidalcycles    
 
+In the VSCode Extension settings, enter the full path to the TidalCycles  settings file named `BootTidal.hs` into the field "Tidalcycles: Boot Tidal Path". To locate this file, open a Terminal and run 
+
+```
+find ~+ . 2>/dev/null -name BootTidal.hs -print
+```
+
+
 ### Testing the Setup
 
 1. Start Supercollider. The bottom bar will change color a bit going green then yellow then green again.
