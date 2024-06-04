@@ -91,9 +91,14 @@ then
 Install VSCode 
 https://code.visualstudio.com/ 
 
-Finally, install the TidalCycles VSCode Extension
+Install the TidalCycles VSCode Extension
 https://marketplace.visualstudio.com/items?itemName=tidalcycles.vscode-tidalcycles     
 
+Finally, in the VSCode Extension settings, enter the full path to the TidalCycles settings file named `BootTidal.hs` into the field "Tidalcycles: Boot Tidal Path". To locate this file, open a Terminal and run 
+
+```
+find ~+ . 2>/dev/null -name BootTidal.hs -print
+```
 
 ### Testing the Setup
 
@@ -104,7 +109,6 @@ Enter this line into the file
 
 ```
 d1 $ sound "bd hh sn hh"
-
 ```
 
 Keep the cursor in the line and press control and Return. The line will be highlighted and after a few seconds the sound should come. (These few seconds delay only occur when TidalCycles "boots up". Later the sound will be triggered immediately).  
@@ -220,12 +224,13 @@ https://code.visualstudio.com/
 Finally, install the TidalCycles VSCode Extension
 https://marketplace.visualstudio.com/items?itemName=tidalcycles.vscode-tidalcycles    
 
-In the VSCode Extension settings, enter the full path to the TidalCycles  settings file named `BootTidal.hs` into the field "Tidalcycles: Boot Tidal Path". To locate this file, open a Terminal and run 
+In the VSCode Extension settings, enter the full path to the TidalCycles  settings file named `BootTidal.hs` into the field "Tidalcycles: Boot Tidal Path". To locate this file, open a Terminal (Cmd window) and run 
 
 ```
-find ~+ . 2>/dev/null -name BootTidal.hs -print
+where -r C: BootTidal.hs
 ```
 
+assuming TidalCycles was installed on drive C:. 
 
 ### Testing the Setup
 
