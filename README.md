@@ -4,11 +4,11 @@ A collection of Algorave and Live Coding materials
 
 [TidalCycles alphabetical index](tidal_index.md)
 
-[TidalCycles installation on a Mac](tidal_setup.md)
+[TidalCycles installation instructions for Mac and Windows](tidal_setup.md)
 
-[A Mac Automator QuickAction to generate a TidalCycles string for a sample in Finder](sample2tidal.zip)
+[A Mac Automator QuickAction to generate a TidalCycles mininotation string for any sample in Finder](sample2tidal.zip)
 
-[A table of keys for evaluating code in Live Coding tools](evaluate_keys.md)
+[A table of the keys used to evaluate code in some Live Coding tools](evaluate_keys.md)
 
 [A subjective comparison of some Live Coding Tools](livecoding_tools.md)
 
