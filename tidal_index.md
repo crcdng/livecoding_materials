@@ -1,6 +1,6 @@
 # TidalCycles alphabetical index (work in progress)
 
-[accelerate](https://tidalcycles.org/docs/reference/samplers#accelerate)    
+[accelerate](https://tidalcycles.org/docs/reference/samplers#accelerate)        
 [all](https://tidalcycles.org/docs/reference/performance/#all) *(documentation missing)*     
 [almostAlways](https://tidalcycles.org/docs/reference/randomness#the-sometimes-family)     
 [almostNever](https://tidalcycles.org/docs/reference/randomness#the-sometimes-family)    
@@ -118,6 +118,7 @@
 [metatune](https://tidalcycles.org/docs/reference/harmony_melody#metatune)    
 [mt](https://tidalcycles.org/docs/reference/performance#mt)    
 [mtrigger](https://tidalcycles.org/docs/reference/performance#mtrigger)    
+[mute](https://tidalcycles.org/docs/patternlib/tutorials/workshop#default-sample-library)     
 [n](https://tidalcycles.org/docs/patternlib/tutorials/workshop#difference-between-functions-n-and-note)   
 [never](https://tidalcycles.org/docs/reference/randomness#the-sometimes-family)    
 [note](https://tidalcycles.org/docs/patternlib/tutorials/workshop#difference-between-functions-n-and-note)   
@@ -130,6 +131,7 @@
 [overlay](https://tidalcycles.org/docs/reference/accumulation/#overlay)        
 [p](https://tidalcycles.org/docs/reference/patterns#classic-pattern-names)    
 [palindrome](https://tidalcycles.org/docs/reference/alteration#palindrome)    
+[pan](https://tidalcycles.org/docs/patternlib/tutorials/workshop#gain-pitch-and-panorama)    
 [panic](https://tidalcycles.org/docs/reference/patterns#stop-a-single-pattern)     
 [perlin](https://tidalcycles.org/docs/reference/randomness#perlin)    
 [perlinWith](https://tidalcycles.org/docs/reference/randomness#perlinwith)    
@@ -189,6 +191,7 @@
 [smash'](https://tidalcycles.org/docs/reference/sampling#smash-1)    
 [smear](https://tidalcycles.org/docs/reference/audio_effects#magnitude-smearing)     
 [smooth](https://tidalcycles.org/docs/reference/oscillators#smooth)    
+[solo](https://tidalcycles.org/docs/patternlib/tutorials/workshop#default-sample-library)     
 [someCycles](https://tidalcycles.org/docs/reference/randomness#somecycles)    
 [someCyclesBy](https://tidalcycles.org/docs/reference/randomness#somecyclesby)    
 [sometimes](https://tidalcycles.org/docs/reference/randomness#sometimes)    
@@ -260,7 +263,10 @@
 [trunc](https://tidalcycles.org/docs/reference/alteration#trunc)      
 [unDegradeBy](https://tidalcycles.org/docs/reference/alteration#undegradeby)      
 [unfix](https://tidalcycles.org/docs/reference/conditions#unfix)      
-[unit](https://tidalcycles.org/docs/reference/samplers#unit)    
+[unit](https://tidalcycles.org/docs/reference/samplers#unit)     
+[unmute](https://tidalcycles.org/docs/patternlib/tutorials/workshop#default-sample-library)    
+[unsolo](https://tidalcycles.org/docs/patternlib/tutorials/workshop#default-sample-library)    
+[up](https://tidalcycles.org/docs/patternlib/tutorials/workshop#gain-pitch-and-panorama)    
 [ur](https://tidalcycles.org/docs/reference/composition#ur)    
 [vowel](https://tidalcycles.org/docs/reference/audio_effects#vowel)     
 [wait](https://tidalcycles.org/docs/reference/transitions#wait-1)    
@@ -282,6 +288,10 @@
 [xfadeIn](https://tidalcycles.org/docs/reference/transitions#xfadein)       
 [xsdelay](https://tidalcycles.org/docs/reference/audio_effects#spectral-delay) *(documentation missing)*        
 [zoom](https://tidalcycles.org/docs/reference/time/#zoom)    
+
+* for parameters that only make sense the context of another command, e.g. "delaytime" for "delay" or "pitch1" for "superstatic" I only mention the main command
+
+* note that some entries were not to be found in the "reference" section, in these cases I tried to find explanations / examples in other parts of the TidalCycles documentation
 
 ## lists / collections / multiple entities
 
